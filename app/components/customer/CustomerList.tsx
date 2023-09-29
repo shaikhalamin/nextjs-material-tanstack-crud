@@ -64,7 +64,7 @@ const CustomerList = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {data.map((customer) => (
+            { Object.keys(data).length > 0 && data.map((customer) => (
               <TableRow key={customer.id}>
                 <TableCell align="left">{customer.client_id}</TableCell>
                 <TableCell align="left">{customer.email}</TableCell>
